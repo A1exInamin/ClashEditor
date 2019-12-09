@@ -22,7 +22,7 @@
                 if (proxyConfig.Proxy) {
                     try {
                         proxyConfig.Proxy.map(proxy => {
-                            if (proxy.type && proxy.type !== 'ss' && proxy.type !== 'vmess' && proxy.type !== 'socks5' && proxy.type !== 'http' && proxy.type !== 'snell') {
+                            if (proxy.type && proxy.type !== 'ss' && proxy.type !== 'ssr' && proxy.type !== 'vmess' && proxy.type !== 'socks5' && proxy.type !== 'http' && proxy.type !== 'snell') {
                                 throw new Error(proxy.type)
                             }
                         });
